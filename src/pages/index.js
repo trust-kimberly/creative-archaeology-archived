@@ -1,10 +1,14 @@
 import * as React from "react"
 import Landing from "../components/landing"
+import "../styles/index.scss";
 
-// markup
 const IndexPage = () => {
   return (
-    <Landing />
+    <>
+      <div className="margins">
+        <Landing />
+      </div>
+    </>
   )
 }
 

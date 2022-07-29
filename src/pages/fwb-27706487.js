@@ -1,8 +1,11 @@
 import * as React from "react"
+import Embed from "../components/embed"
 
 const FWB4 = () => {
   return (
-    <h1>testing</h1>
+    <>
+      <Embed model="b3cf8dbdd0264a78940fa2247fe4c51c" />
+    </>
   )
 }
 
