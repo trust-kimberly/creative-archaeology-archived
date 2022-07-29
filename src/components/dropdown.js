@@ -6,7 +6,6 @@ const Dropdown = ({ title, model }) => {
 
   function toggleDropdown() {
     toggleShow(!show);
-    console.log(show);
   }
 
   return (

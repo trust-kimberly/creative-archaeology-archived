@@ -1,4 +1,5 @@
 import * as React from "react"
+import "../styles/index.scss";
 
 const Embed = ({ model }) => {
   return (

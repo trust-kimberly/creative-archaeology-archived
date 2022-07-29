@@ -7,7 +7,6 @@ const Landing = () => {
 
   function toggleDropdown() {
     toggleShow(!show);
-    console.log(show);
   }
 
   return (
