@@ -16,6 +16,11 @@ h2 {
   font-size: 2rem;
 }
 
+a {
+  color: black;
+  text-decoration: underline;
+}
+
 a:hover {
   color: blue;
   cursor: pointer;
@@ -28,6 +33,33 @@ section {
 .margins {
   margin: 4vh 4vw;
 }
+
+a.title {
+  color: black;
+  cursor: pointer;
+  text-decoration: none
+}
+
+// Mobile Responsiveness
+
+@media only screen and (max-width: 500px) {
+
+  h1 {
+    font-size: 3.8rem;
+    margin-bottom: 1.625rem;
+  }
+
+  a:hover {
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  section {
+    margin-bottom: 3.2rem;
+  }
+}
+
 
 // Components
 
