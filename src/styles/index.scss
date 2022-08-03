@@ -1,3 +1,19 @@
+// Media query
+
+@mixin media($size) {
+  @if $size == 'x-small' {
+    @media only screen and (max-width: 500px) { @content; }
+  } @else if $size == 'small' {
+    @media only screen and (max-width: 650px) { @content; }
+  } @else if $size == 'medium' {
+    @media only screen and (max-width: 800px) { @content; }
+  } @else if $size == 'large' {
+    @media only screen and (px) { @content; }
+  } @else {
+    @media only screen and (max-width: $size) { @content; }
+  }
+}
+
 // Global Styling
 
 html,
@@ -10,6 +26,12 @@ body {
 h1 {
   font-size: 6rem;
   margin-bottom: 1.625rem;
+
+  @include media(x-small) {
+    font-size: 3.8rem;
+    margin-bottom: 1.625rem;
+  }
+
 }
 
 h2 {
@@ -17,17 +39,39 @@ h2 {
 }
 
 a {
-  color: black;
-  text-decoration: underline;
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
 }
 
 a:hover {
-  color: blue;
   cursor: pointer;
+  text-decoration: underline;
+
+  @include media(x-small) {
+    // text-decoration: none;
+  }
+}
+
+a:focus {
+  color: pink;
+}
+
+a:active {
+  @include media(x-small) {
+    color: red;
+  }
 }
 
 section {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
+
+  @include media(x-small) {
+    margin-bottom: 2.8rem;
+  }
 }
 
 .margins {
@@ -40,27 +84,19 @@ a.title {
   text-decoration: none
 }
 
-// Mobile Responsiveness
-
-@media only screen and (max-width: 500px) {
-
-  h1 {
-    font-size: 3.8rem;
-    margin-bottom: 1.625rem;
-  }
-
-  a:hover {
-    color: blue;
-    cursor: pointer;
-    text-decoration: none;
-  }
-
-  section {
-    margin-bottom: 3.2rem;
-  }
+.active {
+  color: blue;
+  text-decoration: underline;
 }
 
+.rotate {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  display: inline-block;
+}
 
-// Components
-
-@import "landing";
+.responsive-embed {
+    height: "60vh";    
+    width: "60vw";
+}

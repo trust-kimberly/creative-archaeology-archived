@@ -21,14 +21,16 @@ const Landing = () => {
         <p>FWB FEST 2022 is the first staging of Creative Archaeology, scans and documentation of the buried sculptures are accessible below.</p>
       </section>
       <section>
-        <h2>
+        <h3>
+          <span className={show ? "rotate" : "" } style={{color: "blue"}}>{'>'}</span>
+          <span>{' '}</span>
           <a
             onClick={() => toggleDropdown()}
-          // style={show ? { color: "blue" } : { color: "inherit" }}
+            className={show ? "active" : "" }
           >
             FWB FEST 22
           </a>
-        </h2>
+        </h3>
         <div style={show ? { display: "grid" } : { display: "none" }}>
           <Dropdown title="FWB Tablet" model="25c1834575124c3492c4aeec01a5e56f" />
           <Dropdown title="Copy of Michelangelo’s David’s Ear With AirPod™️" model="d65146b1338d45ed82b9cae4dfdea496" />
