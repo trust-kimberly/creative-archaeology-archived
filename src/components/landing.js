@@ -35,7 +35,7 @@ const Landing = () => {
           <Dropdown 
             title="FWB Tablet" 
             model="25c1834575124c3492c4aeec01a5e56f" 
-            mobile="adbd5e16908342a7ba78bb5f81cd5fb7"
+            mobile="194d8007b4a14050b961704508a60e7d"
           />
           <Dropdown 
             title="Copy of Michelangelo’s David’s Ear With AirPod™️"
