@@ -25,7 +25,7 @@ const Dropdown = ({ title, model, mobile }) => {
         <div className="sketchfab-embed-wrapper desktop">
           <iframe 
             style={{ height: "60vh", width: "92vw" }} 
-            title="🕊" 
+            title={title} 
             frameBorder="0" 
             allowFullScreen={true} 
             mozallowfullscreen="true" 
@@ -42,7 +42,7 @@ const Dropdown = ({ title, model, mobile }) => {
         <div className="sketchfab-embed-wrapper mobile">
           <iframe 
             style={{ height: "60vh", width: "92vw" }} 
-            title="🕊" 
+            title={title}
             frameBorder="0" 
             allowFullScreen={true} 
             mozallowfullscreen="true" 
