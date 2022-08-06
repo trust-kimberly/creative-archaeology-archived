@@ -1,4 +1,4 @@
-// Media query
+// Media queries
 
 @mixin media($size) {
   @if $size == 'x-small' {
@@ -23,6 +23,18 @@ body {
   scroll-behavior: smooth;
 }
 
+.margins {
+  margin: 4vh 4vw;
+}
+
+section {
+  margin-bottom: 5rem;
+
+  @include media(x-small) {
+    margin-bottom: 2.8rem;
+  }
+}
+
 h1 {
   font-size: 6rem;
   margin-bottom: 1.625rem;
@@ -41,52 +53,33 @@ h2 {
 a {
   color: blue;
   text-decoration: none;
-}
 
-a:visited {
-  color: purple;
-}
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-
-  @include media(x-small) {
-    // text-decoration: none;
+  &:visited {
+    color: purple;
   }
-}
 
-a:focus {
-  color: pink;
-}
-
-a:active {
-  @include media(x-small) {
-    color: red;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  
+    @include media(x-small) {
+      // text-decoration: none;
+    }
   }
-}
 
-section {
-  margin-bottom: 5rem;
-
-  @include media(x-small) {
-    margin-bottom: 2.8rem;
+  :active {
+    @include media(x-small) {
+      color: red;
+    }
   }
+
 }
 
-.margins {
-  margin: 4vh 4vw;
-}
-
-a.title {
-  color: black;
-  cursor: pointer;
-  text-decoration: none
-}
+// Dropdown Links
 
 .active {
   color: blue;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .rotate {
@@ -96,7 +89,19 @@ a.title {
   display: inline-block;
 }
 
-.responsive-embed {
-    height: "60vh";    
-    width: "60vw";
+// Optimized for Mobile
+
+.desktop {
+  @include media(x-small) {
+    display: none;
+  }
 }
+
+.mobile {
+  display: none;
+
+  @include media(x-small) {
+    display: block;
+  }
+}
+
