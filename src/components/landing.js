@@ -38,11 +38,11 @@ const Landing = () => {
             model="25c1834575124c3492c4aeec01a5e56f" 
             // bbj test 
             // mobile="194d8007b4a14050b961704508a60e7d"
-            mobile="7989d8e5a0db4e25a12620c18dd2f39b"
+            mobile="a93e6547c2b542519243b83d686254fd"
           />
           <Dropdown 
             // title="Copy of Michelangelo’s David’s Ear With AirPod™️"
-            title="200k"
+            title="200"
             model="d65146b1338d45ed82b9cae4dfdea496" 
             mobile="a93e6547c2b542519243b83d686254fd"
           />
@@ -50,27 +50,27 @@ const Landing = () => {
             // title="Black Face White Stone" 
             title="25k"
             model="a38c30d72054424fb4244a0e39a677f0"
-            mobile="c3ce5b74377643e9a63dbf88ac538dea"
+            mobile="a93e6547c2b542519243b83d686254fd"
           />
           <Dropdown
             title="Face 55:1000 (Noseless Michael Jackson With Skin Condition)"
             model="b3cf8dbdd0264a78940fa2247fe4c51c"
-            mobile=""
+            mobile="a93e6547c2b542519243b83d686254fd"
           />
           <Dropdown 
             title="Face 1:1000 (Mother)" 
             model="df5c31b028e34d9f9fcd60f2f6a6682b"
-            mobile=""
+            mobile="a93e6547c2b542519243b83d686254fd"
           />
           <Dropdown 
             title="⛈" 
             model="3a094e80f28a4f4391aa729642afdfca"
-            mobile=""
+            mobile="a93e6547c2b542519243b83d686254fd"
           />
           <Dropdown
             title="🕊"
             model="10503f815a274f78a5f7644dd7eb6c42"
-            mobile=""
+            mobile="a93e6547c2b542519243b83d686254fd"
           />
         </div>
       </section>
