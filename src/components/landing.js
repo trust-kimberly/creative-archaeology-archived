@@ -33,19 +33,24 @@ const Landing = () => {
         </h2>
         <div style={show ? { display: "grid" } : { display: "none" }}>
           <Dropdown 
-            title="FWB Tablet" 
+            // title="FWB Tablet" 
+            title="40k"
             model="25c1834575124c3492c4aeec01a5e56f" 
-            mobile="194d8007b4a14050b961704508a60e7d"
+            // bbj test 
+            // mobile="194d8007b4a14050b961704508a60e7d"
+            mobile="7989d8e5a0db4e25a12620c18dd2f39b"
           />
           <Dropdown 
-            title="Copy of Michelangelo’s David’s Ear With AirPod™️"
+            // title="Copy of Michelangelo’s David’s Ear With AirPod™️"
+            title="200k"
             model="d65146b1338d45ed82b9cae4dfdea496" 
-            mobile=""
+            mobile="a93e6547c2b542519243b83d686254fd"
           />
           <Dropdown 
-            title="Black Face White Stone" 
+            // title="Black Face White Stone" 
+            title="25k"
             model="a38c30d72054424fb4244a0e39a677f0"
-            mobile=""
+            mobile="c3ce5b74377643e9a63dbf88ac538dea"
           />
           <Dropdown
             title="Face 55:1000 (Noseless Michael Jackson With Skin Condition)"
